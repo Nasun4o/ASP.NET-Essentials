@@ -1,0 +1,31 @@
+﻿@model CarDealerApp.ViewModels.CarsAllViewModel
+@{
+    ViewBag.Title = "All";
+    ViewBag.Brand = Model.CarViewModels.Select(x => x.Model).FirstOrDefault();
+}
+
+<h2>All @ViewBag.Brand</h2>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Model</th>
+                <th>TravelDistance</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var car in @Model.CarViewModels)
+            {
+                <tr>
+                    <td>@car.Id</td>
+                    <td>@car.Model</td>
+                    <td>@car.TravelDistance</td>
+                 
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

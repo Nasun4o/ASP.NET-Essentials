@@ -1,0 +1,31 @@
+﻿@model CarDealerApp.ViewModels.CustomersAllViewModel
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All</h2>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Birth Date</th>
+                <th>Young Driver</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in @Model.Customers)
+            {
+                <tr>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name</td>
+                    <td>@customer.BirthDate.ToShortDateString()</td>
+                    <td>@customer.IsYoungDriver</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
