@@ -1,0 +1,57 @@
+﻿@model CarDealerApp.ViewModels.CarPartsAllViewModel
+
+@{
+    ViewBag.Title = "CarParts";
+    var carModel = Model.CarParts.Model;
+    var carMake = Model.CarParts.Make;
+    var carTravelDis = Model.CarParts.TravellDistance;
+}
+
+<h2>CarParts</h2>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>Make</th>
+                <th>Model</th>
+                <th>TravelDistance</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+
+            <tr>
+                <td>@carModel</td>
+                <td>@carMake</td>
+                <td>@carTravelDis</td>
+              
+            </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Part Name</th>
+                <th>Part Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CarParts.Parts)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                </tr>
+            }
+           
+
+
+        </tbody>
+    </table>
+</div>

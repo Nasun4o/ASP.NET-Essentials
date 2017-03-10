@@ -33,18 +33,17 @@ namespace CarDealerApp.Controllers
             return this.View(cavm);
         }
 
-        [Route("All/{Order}")]
+        [Route("All/{Order?}")]
         public ActionResult OrderByBirthDate(string order)
         {
             CustomersAllViewModel cvm = this.customerService.OrderBy(order);
             return this.View(cvm);
          
         }
-        //[Route("All/Descending")]
-        //public ActionResult Descending()
+        //[Route("{id}")]
+        //public ActionResult CustomerSales(int id)
         //{
-        //    CustomersAllViewModel cvm = this.customerService.AscendingOrder();
-        //    return this.View(cvm);
+
         //}
 
     }

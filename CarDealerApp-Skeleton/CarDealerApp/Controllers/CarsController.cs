@@ -23,11 +23,17 @@ namespace CarDealerApp.Controllers
         {
             return View();
         }
-        [Route("All/{model}")]
+        [Route("All/{model?}/")]
         public ActionResult All(string model)
         {
             CarsAllViewModel cavm = this.carsService.GetAllCarsByModel(model);
             return this.View(cavm);
+        }
+        [Route("{id}/parts")]
+        public ActionResult CarParts (int id)
+        {
+            CarPartsAllViewModel cpavm = this.carsService.GetAllCarsById(id);
+            return this.View(cpavm);
         }
     }
 }

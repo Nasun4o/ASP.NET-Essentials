@@ -1,0 +1,31 @@
+﻿@model CarDealerApp.ViewModels.SuppliersAllViewModel
+
+@{
+    ViewBag.Title = "Suppliers";
+}
+
+<h2>Suppliers</h2>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name of Supplier</th>
+                <th>NumberOfParts</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sup in @Model.Suppliers)
+            {
+                <tr>
+                    <td>@sup.Id</td>
+                    <td>@sup.Name</td>
+                    <td>@sup.NumberOfParts</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

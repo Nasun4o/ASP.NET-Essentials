@@ -130,6 +130,7 @@
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
+    <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -137,10 +138,17 @@
     <Compile Include="Service\CarsService.cs" />
     <Compile Include="Service\CustomerService.cs" />
     <Compile Include="Service\Service.cs" />
+    <Compile Include="Service\SuppliersService.cs" />
+    <Compile Include="ViewModels\CarPartsAllViewModel.cs" />
+    <Compile Include="ViewModels\CarPartsViewModel.cs" />
     <Compile Include="ViewModels\CarsAllViewModel.cs" />
     <Compile Include="ViewModels\CarViewModel.cs" />
     <Compile Include="ViewModels\CustomersAllViewModel.cs" />
+    <Compile Include="ViewModels\CustomerTotalSalesViewModel.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\PartsViewModel.cs" />
+    <Compile Include="ViewModels\SuppliersAllViewModel.cs" />
+    <Compile Include="ViewModels\SupplierViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -198,6 +206,8 @@
     <Content Include="Views\Customers\All.cshtml" />
     <Content Include="Views\Customers\OrderByBirthDate.cshtml" />
     <Content Include="Views\Cars\All.cshtml" />
+    <Content Include="Views\Suppliers\Suppliers.cshtml" />
+    <Content Include="Views\Cars\CarParts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
