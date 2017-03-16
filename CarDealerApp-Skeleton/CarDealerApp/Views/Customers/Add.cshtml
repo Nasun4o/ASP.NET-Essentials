@@ -1,0 +1,39 @@
+﻿@model CarDealerApp.BindingModels.AddUserBindingModel
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+<form class="form-horizontal" action='' method="POST">
+    <fieldset>
+        <div id="legend">
+            <legend class="">Register</legend>
+        </div>
+        <div class="control-group">
+            <!-- Name -->
+            <label class="control-label" for="Name">Name</label>
+            <div class="controls">
+                <input type="text" id="Name" name="Name" placeholder="" class="input-xlarge">
+                <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- E-BirthDate -->
+            <label class="control-label" for="BirthDate">BirthDate</label>
+            <div class="controls">
+                <input type="datetime" id="BirthDate" name="BirthDate" placeholder="" class="input-xlarge">
+                <p class="help-block">Please provide your BirthDate</p>
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-success" type="submit">Register</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

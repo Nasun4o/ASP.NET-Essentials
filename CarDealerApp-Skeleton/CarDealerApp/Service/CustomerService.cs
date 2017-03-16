@@ -5,7 +5,9 @@ using System.Web;
 
 namespace CarDealerApp.Service
 {
+    using AutoMapper;
     using CarDealer.Models;
+    using CarDealerApp.BindingModels;
     using CarDealerApp.ViewModels;
 
     public class CustomerService : Service
@@ -94,5 +96,41 @@ namespace CarDealerApp.Service
 
         }
 
+        public void AddUser(AddUserBindingModel addUserBindingModel)
+        {
+            var timeNow = DateTime.Now.Year;
+            var eligbleForLicense = addUserBindingModel.BirthDate.Year + 18;
+            if ((timeNow - eligbleForLicense) > 2)
+            {
+                var newUser = new Customer() { Name = addUserBindingModel.Name, BirthDate = addUserBindingModel.BirthDate, IsYoungDriver = false };
+                this.Context.Customers.Add(newUser);
+            }
+            else
+            {
+                var newUser = new Customer() { Name = addUserBindingModel.Name, BirthDate = addUserBindingModel.BirthDate, IsYoungDriver = true };
+                this.Context.Customers.Add(newUser);
+            }
+
+            this.Context.SaveChanges();
+        }
+
+        public EditUserViewModel EditUser(int id)
+        {
+            Customer user = this.Context.Customers.Find(id);
+            EditUserViewModel model = Mapper.Instance.Map<Customer, EditUserViewModel>(user);
+            return model;
+        }
+        public void Edit(AddUserBindingModel bind)
+        {
+            Customer user = this.Context.Customers.Find(bind.Id);
+
+            if (user == null)
+            {
+                throw new ArgumentException("Cannot find customer with such id !!");
+            }
+            user.Name = bind.Name;
+            user.BirthDate = bind.BirthDate;
+            this.Context.SaveChanges();
+        }
     }
 }

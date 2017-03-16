@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace CarDealerApp.Controllers
 {
+    using CarDealerApp.BindingModels;
     using CarDealerApp.Service;
     using CarDealerApp.ViewModels;
 
@@ -46,7 +47,43 @@ namespace CarDealerApp.Controllers
             TotalSalesByCustomerViewModel tsbcvm = this.customerService.TotalSalesByCustomer(id);
             return this.View(tsbcvm);
         }
-     
+
+        [HttpGet]
+        [Route("Add")]
+        public ActionResult Add()
+        {
+            return this.View();
+        }
+
+        [HttpPost]
+        [Route("Add")]
+        public ActionResult Add([Bind(Include = "Name, BirthDate")] AddUserBindingModel addUserBindingModel)
+        {
+            if (ModelState.IsValid)
+            {
+                this.customerService.AddUser(addUserBindingModel);
+            }
+            return this.Redirect("All");
+        }
+
+        [HttpGet]
+        [Route("Edit/{id}")]
+        public ActionResult Edit(int id)
+        {
+            EditUserViewModel model = this.customerService.EditUser(id);
+            return this.View(model);
+        }
+
+        [HttpPost]
+        [Route("Edit/{id}")]
+        public ActionResult Edit([Bind(Include = "Id, Name, BirthDate")] AddUserBindingModel editUserBindingModel)
+        {
+            if (ModelState.IsValid)
+            {
+                this.customerService.Edit(editUserBindingModel);
+            }
+            return this.RedirectToAction("All");
+        }
 
     }
 }

@@ -184,3 +184,6 @@ C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\bin
 C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealer.App.csprojResolveAssemblyReference.cache
 C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealerApp.dll
 C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealerApp.pdb
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\bin\AutoMapper.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\bin\System.ValueTuple.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealerApp\bin\AutoMapper.xml

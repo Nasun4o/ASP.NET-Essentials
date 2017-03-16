@@ -48,6 +48,10 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutoMapper, Version=0.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.0.0\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -68,6 +72,10 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -127,6 +135,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BindingModels\AddUserBindingModel.cs" />
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
@@ -149,6 +158,7 @@
     <Compile Include="ViewModels\CustomersAllViewModel.cs" />
     <Compile Include="ViewModels\CustomerTotalSalesViewModel.cs" />
     <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\EditUserViewModel.cs" />
     <Compile Include="ViewModels\PartsViewModel.cs" />
     <Compile Include="ViewModels\SaleViewModel.cs" />
     <Compile Include="ViewModels\SuppliersAllViewModel.cs" />
@@ -215,6 +225,8 @@
     <Content Include="Views\Cars\CarParts.cshtml" />
     <Content Include="Views\Customers\About.cshtml" />
     <Content Include="Views\Sales\All.cshtml" />
+    <Content Include="Views\Customers\Add.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

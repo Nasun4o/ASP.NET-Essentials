@@ -1,0 +1,23 @@
+﻿@model CarDealerApp.ViewModels.EditUserViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="@Model.Id" method="POST">
+    <div class="form-group">
+        <label for="Id">Id</label>
+        <input name="Id" type="hidden" class="form-control" id="Id" value="@Model.Id">
+    </div>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input name="Name" type="text" class="form-control" id="name" placeholder="@Model.Name">
+    </div>
+    <div class="form-group">
+        <label for="birthdate">Birth Date:</label>
+        <input name="BirthDate" type="date" class="form-control" id="birthdate" placeholder="@Model.BirthDate">
+    </div>
+    <button type="submit" class="btn btn-default">Edit</button>
+</form>
