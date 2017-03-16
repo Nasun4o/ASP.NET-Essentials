@@ -1,0 +1,35 @@
+﻿@using CarDealerApp.ViewModels;
+@model  IEnumerable<SaleViewModel>
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Car sold</th>
+        <th>Car sold to</th>
+        <th>Sale Price</th>
+        <th>Sale Discount</th>
+    </tr>
+
+
+    @foreach (var sale in Model)
+    {
+        <tr>
+            <td>@sale.Car.Make @sale.Car.Model</td>
+            <td>@sale.Customer.Name</td>
+            <td>@sale.Price</td>
+            <td>@sale.Discount</td>
+        </tr>
+    }
+    @*<tr>
+        <td>@Model.Car.Make @Model.Car.Model</td>
+        <td>@Model.Customer.Name</td>
+        <td>@Model.Price</td>
+        <td>@Model.Discount</td>
+    </tr>*@
+
+
+</table>

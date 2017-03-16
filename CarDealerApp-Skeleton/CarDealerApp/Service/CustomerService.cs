@@ -5,6 +5,7 @@ using System.Web;
 
 namespace CarDealerApp.Service
 {
+    using CarDealer.Models;
     using CarDealerApp.ViewModels;
 
     public class CustomerService : Service
@@ -72,6 +73,26 @@ namespace CarDealerApp.Service
             cavm.Customers = lkvm;
             return cavm;
         }
-        
+
+        public TotalSalesByCustomerViewModel TotalSalesByCustomer(int id)
+        {
+            Customer customer;
+            customer = this.Context.Customers.Find(id);
+
+            TotalSalesByCustomerViewModel model = new TotalSalesByCustomerViewModel()
+                                                      {
+                                                          BoughtCars =
+                                                              customer.Sales.Count,
+                                                          MoneySpent =
+                                                              customer.Sales.Sum(
+                                                                  x =>
+                                                                  x.Car.Parts.Sum(
+                                                                      a => a.Price)),
+                                                          Name = customer.Name
+                                                      };
+            return model;
+
+        }
+
     }
 }

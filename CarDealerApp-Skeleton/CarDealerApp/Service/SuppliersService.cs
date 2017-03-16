@@ -31,7 +31,7 @@ namespace CarDealerApp.Service
             }
             else
             {
-                foreach (var item in this.Context.Suppliers.Where(s => s.IsImporter == true))
+                foreach (var item in this.Context.Suppliers.Where(s => s.IsImporter))
                 {
                     SupplierViewModel model = new SupplierViewModel()
                     {

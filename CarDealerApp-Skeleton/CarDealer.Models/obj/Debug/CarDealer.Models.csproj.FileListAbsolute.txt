@@ -3,3 +3,8 @@ C:\Users\PC-PC\Desktop\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDeale
 C:\Users\PC-PC\Desktop\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
 C:\Users\PC-PC\Desktop\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
 C:\Users\PC-PC\Desktop\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb

@@ -22,3 +22,15 @@ C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Dat
 C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.csprojResolveAssemblyReference.cache
 C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.dll
 C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.pdb
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.dll.config
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.pdb
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Models.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Models.pdb
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.xml
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.csprojResolveAssemblyReference.cache
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.dll
+C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.pdb

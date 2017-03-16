@@ -40,11 +40,13 @@ namespace CarDealerApp.Controllers
             return this.View(cvm);
          
         }
-        //[Route("{id}")]
-        //public ActionResult CustomerSales(int id)
-        //{
-
-        //}
+        [Route("{id}")]
+        public ActionResult About(int id)
+        {
+            TotalSalesByCustomerViewModel tsbcvm = this.customerService.TotalSalesByCustomer(id);
+            return this.View(tsbcvm);
+        }
+     
 
     }
 }
