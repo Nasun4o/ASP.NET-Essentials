@@ -9,6 +9,7 @@ using AutoMapper;
 
 namespace CarDealerApp
 {
+    using BindingModels;
     using CarDealer.Models;
     using CarDealerApp.ViewModels;
 
@@ -29,6 +30,8 @@ namespace CarDealerApp
                 expression =>
                 {
                     expression.CreateMap<Customer, EditUserViewModel>();
+                    expression.CreateMap<Part, AllPartsViewModel>();
+                    expression.CreateMap<Part, DeletePartViewModel>();
                 });
         }
     }

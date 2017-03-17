@@ -37,3 +37,6 @@ C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\o
 C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\AutoMapper.dll
 C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\System.ValueTuple.dll
 C:\Users\PC-PC\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\AutoMapper.xml
+C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\AutoMapper.dll
+C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\System.ValueTuple.dll
+C:\Users\operator\Desktop\ASP.NET-Essentials\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\AutoMapper.xml
